@@ -5,73 +5,57 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>$TechStock - The Future of Tech Stocks</title>
     <style>
-        body { font-family: Arial, sans-serif; background-color: #121212; color: white; text-align: center; margin: 0; padding: 0; }
-        header { background-color: #1e1e1e; padding: 20px; font-size: 28px; font-weight: bold; }
-        section { margin: 40px auto; padding: 30px; background-color: #222; border-radius: 10px; max-width: 800px; box-shadow: 0px 0px 10px rgba(0, 255, 153, 0.5); }
-        .highlight { font-size: 26px; color: #00ff99; font-weight: bold; }
-        .btn { padding: 15px 30px; background-color: #00ff99; color: black; font-size: 20px; text-decoration: none; border-radius: 5px; display: inline-block; margin-top: 20px; transition: 0.3s; }
-        .btn:hover { background-color: #00cc77; }
+        body { font-family: Arial, sans-serif; background-color: #ffffff; color: black; text-align: center; margin: 0; padding: 0; }
+        header { background-color: #0073e6; color: white; padding: 20px; font-size: 28px; font-weight: bold; position: relative; }
+        .ticker {
+            background-color: black;
+            color: white;
+            font-size: 18px;
+            padding: 10px 0;
+            position: absolute;
+            top: 60px;
+            width: 100%;
+            overflow: hidden;
+            white-space: nowrap;
+        }
+        .ticker span {
+            display: inline-block;
+            padding-left: 100%;
+            animation: ticker-scroll 15s linear infinite;
+        }
+        @keyframes ticker-scroll {
+            from { transform: translateX(100%); }
+            to { transform: translateX(-100%); }
+        }
+        section { margin: 60px auto; padding: 30px; background-color: #f4f4f4; border-radius: 10px; max-width: 800px; box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.2); }
+        .highlight { font-size: 26px; color: #0073e6; font-weight: bold; }
+        .btn { padding: 15px 30px; background-color: #0073e6; color: white; font-size: 20px; text-decoration: none; border-radius: 5px; display: inline-block; margin-top: 20px; transition: 0.3s; }
+        .btn:hover { background-color: #005bb5; }
         p { font-size: 18px; line-height: 1.6; }
-        footer { background-color: #1e1e1e; padding: 15px; margin-top: 40px; }
+        footer { background-color: #0073e6; color: white; padding: 15px; margin-top: 40px; }
+        img { max-width: 100%; border-radius: 10px; margin-top: 20px; }
     </style>
 </head>
 <body>
     <header>
         <h1>$TechStock 🚀</h1>
         <p>The hottest tech stock that’s not a stock!</p>
+        <div class="ticker">
+            <span>WCOM: 0.00 ▼100% | ETOYS: 0.00 ▼100% | ENRON: 0.00 ▼100% | THERANOS: 0.00 ▼100% | WEWORK: 0.00 ▼100% | PETS.COM: 0.00 ▼100% | $TECHSTOCK: 0.50 ▲1000% 🚀</span>
+        </div>
     </header>
 
     <section>
         <h2 class="highlight">🚀 No Earnings. No Dividends. No Problem.</h2>
-        <p>$TechStock is the first fully transparent tech stock with <b>infinite upside</b> and absolutely <b>no revenue</b>. The future is bright!</p>
+        <p>In a world where real tech stocks never turn a profit, $TechStock embraces the future with <b>zero revenue and infinite potential</b>.</p>
+        <img src="/mnt/data/wallstreetimage.jpg" alt="Wall Street">
         <a href="#buy" class="btn">BUY $TechStock NOW</a>
     </section>
 
     <section>
-        <h2>📉 Official Q2 Financial Report</h2>
-        <p><b>Revenue:</b> $0 (Exceeding Expectations!)</p>
-        <p><b>EBITLMAO:</b> +420% YOY Growth</p>
-        <p><b>P/H Ratio:</b> ∞ (Pure Hopium!)</p>
-        <p><b>Projected Earnings, Never Reported (PENR):</b> 1000% Increase</p>
-        <p>See the <a href="#earnings">full investor report</a></p>
-    </section>
-
-    <section>
-        <h2>🔍 Analyst Coverage & Fake Broker Reports</h2>
-        <p>"$TechStock is the most disruptive financial innovation since the invention of money." - <b>C.R.A.P. Securities</b></p>
-        <p>"With a Price-to-Hopium ratio of infinity, we are confident in a $69,420 price target." - <b>Bagholder Sachs</b></p>
-        <p>"TechStock remains committed to never generating revenue, ensuring its status as a true tech stock." - <b>Infinite Upside Capital</b></p>
-    </section>
-
-    <section>
-        <h2>🎤 Join Our 'Lack of Earnings' Call</h2>
-        <p>Live Q&A with $TechStock's executive team as fake analysts from C.R.A.P. Securities ask the tough questions.</p>
-        <p>📅 Next Call: <b>Coming Soon™</b></p>
-        <a href="#spaces" class="btn">Join Twitter Spaces</a>
-    </section>
-
-    <section>
-        <h2>📢 Viral News & Twitter Pump</h2>
-        <p>"SEC investigating $TechStock for having zero revenue; Investors say 'Who Cares'"</p>
-        <p>"Jim Cramer doubts $TechStock. Market immediately pumps 500%"</p>
-        <p>"$TechStock considering pivot to AI. Future secured."</p>
-    </section>
-
-    <section>
-        <h2>📚 Legendary Financial Quotes</h2>
-        <p>"The game teaches you the game." - Jesse Livermore</p>
-        <p>"Speculation is an effort, probably unsuccessful, to turn a little money into a lot." - Fred Schwed Jr.</p>
-        <p>"Markets can stay irrational longer than you can stay solvent." - John Maynard Keynes</p>
-        <p>"Hope is a bad investment strategy." - Jesse Livermore</p>
-    </section>
-
-    <section>
-        <h2>💀 Past Financial Scandals</h2>
-        <p><b>Enron (2001):</b> Faked billions in revenue before collapsing in one of the biggest corporate frauds ever.</p>
-        <p><b>Theranos (2016):</b> Claimed to revolutionize blood testing, but the entire company was built on lies.</p>
-        <p><b>WeWork (2019):</b> Once valued at $47B, WeWork was exposed as a business model disaster.</p>
-        <p><b>WorldCom (2002):</b> Committed $11B in accounting fraud, wiping out investors overnight.</p>
-        <p><b>Luckin Coffee (2020):</b> The "Starbucks of China" that literally made up $310M in sales.</p>
+        <h2>📢 Spread the Word - Tell Everyone!</h2>
+        <p>Owning $TechStock isn’t just an investment; it’s a <b>lifestyle</b>. The more you tell people about it, the more valuable it becomes. If that sounds like a pyramid scheme, it’s only because **you don’t understand the blockchain**.</p>
+        <img src="/mnt/data/ponzi champ.jpg" alt="Ponzi Champ">
     </section>
 
     <footer>
