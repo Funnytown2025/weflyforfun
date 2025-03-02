@@ -3,19 +3,21 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>$TechStock - The Future of Tech Stocks</title>
+    <title>$TechStock News - The Only Market That Matters</title>
     <style>
-        body { font-family: Arial, sans-serif; background-color: #ffffff; color: black; text-align: center; margin: 0; padding: 0; }
-        header { background-color: #0073e6; color: white; padding: 20px; font-size: 28px; font-weight: bold; position: relative; }
+        body { font-family: Arial, sans-serif; background-color: #ffffff; color: black; margin: 0; padding: 0; }
+        header { background-color: #002f6c; color: white; padding: 20px; text-align: center; font-size: 28px; font-weight: bold; }
         .ticker {
-            background-color: black;
-            color: white;
+            background-color: #ffcc00;
+            color: black;
             font-size: 18px;
             padding: 10px 0;
-            position: relative;
             width: 100%;
             overflow: hidden;
             white-space: nowrap;
+            position: fixed;
+            top: 0;
+            z-index: 1000;
         }
         .ticker span {
             display: inline-block;
@@ -28,47 +30,60 @@
         }
         .ticker .down { color: red; }
         .ticker .up { color: green; font-weight: bold; }
-        section { margin: 60px auto; padding: 30px; background-color: #f4f4f4; border-radius: 10px; max-width: 800px; box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.2); }
-        .highlight { font-size: 26px; color: #0073e6; font-weight: bold; }
-        .btn { padding: 15px 30px; background-color: #0073e6; color: white; font-size: 20px; text-decoration: none; border-radius: 5px; display: inline-block; margin-top: 20px; transition: 0.3s; }
+        .content { max-width: 1200px; margin: 80px auto 40px auto; padding: 20px; }
+        .headline { font-size: 30px; font-weight: bold; margin-bottom: 10px; }
+        .news-container { display: flex; flex-wrap: wrap; justify-content: space-between; }
+        .news-item { width: 48%; background-color: #f4f4f4; padding: 15px; border-radius: 5px; margin-bottom: 20px; box-shadow: 2px 2px 10px rgba(0,0,0,0.1); }
+        .news-item img { width: 100%; border-radius: 5px; }
+        .footer { background-color: #002f6c; color: white; text-align: center; padding: 15px; margin-top: 40px; }
+        .btn { padding: 15px 30px; background-color: #0073e6; color: white; font-size: 18px; text-decoration: none; border-radius: 5px; display: inline-block; margin-top: 20px; transition: 0.3s; }
         .btn:hover { background-color: #005bb5; }
-        p { font-size: 18px; line-height: 1.6; }
-        footer { background-color: #0073e6; color: white; padding: 15px; margin-top: 40px; }
-        img { max-width: 100%; border-radius: 10px; margin-top: 20px; }
     </style>
 </head>
 <body>
+    <div class="ticker">
+        <span>
+            <span class="down">WCOM: 0.00 ▼100%</span> | 
+            <span class="down">ETOYS: 0.00 ▼100%</span> | 
+            <span class="down">ENRON: 0.00 ▼100%</span> | 
+            <span class="down">THERANOS: 0.00 ▼100%</span> | 
+            <span class="down">WEWORK: 0.00 ▼100%</span> | 
+            <span class="down">PETS.COM: 0.00 ▼100%</span> | 
+            <span class="up">$TECHSTOCK: 0.50 ▲1000% 🚀</span>
+        </span>
+    </div>
+
     <header>
-        <h1>$TechStock 🚀</h1>
-        <p>The hottest tech stock that’s not a stock!</p>
-        <div class="ticker">
-            <span>
-                <span class="down">WCOM: 0.00 ▼100%</span> | 
-                <span class="down">ETOYS: 0.00 ▼100%</span> | 
-                <span class="down">ENRON: 0.00 ▼100%</span> | 
-                <span class="down">THERANOS: 0.00 ▼100%</span> | 
-                <span class="down">WEWORK: 0.00 ▼100%</span> | 
-                <span class="down">PETS.COM: 0.00 ▼100%</span> | 
-                <span class="up">$TECHSTOCK: 0.50 ▲1000% 🚀</span>
-            </span>
-        </div>
+        $TechStock News - The Only Market That Matters
     </header>
 
-    <section>
-        <h2 class="highlight">🚀 No Earnings. No Dividends. No Problem.</h2>
-        <p>In a world where real tech stocks never turn a profit, $TechStock embraces the future with <b>zero revenue and infinite potential</b>.</p>
-        <img src="/mnt/data/wallstreetimage.jpg" alt="Wall Street">
-        <a href="#buy" class="btn">BUY $TechStock NOW</a>
-    </section>
+    <div class="content">
+        <div class="headline">BREAKING: $TechStock Hits a New All-Time High! 🚀</div>
+        <div class="news-container">
+            <div class="news-item">
+                <img src="/mnt/data/wallstreetimage.jpg" alt="Wall Street">
+                <h3>Investors Stunned as $TechStock Defies Gravity</h3>
+                <p>Despite having no revenue or earnings, $TechStock continues to skyrocket as investors FOMO in.</p>
+                <a href="#buy" class="btn">BUY $TechStock NOW</a>
+            </div>
+            <div class="news-item">
+                <img src="/mnt/data/ponzi champ.jpg" alt="Ponzi Champ">
+                <h3>Experts Say You Must Tell Everyone About $TechStock</h3>
+                <p>The more people who know, the more valuable it becomes. That’s just basic market dynamics!</p>
+            </div>
+            <div class="news-item">
+                <h3>SEC Investigates $TechStock… But Who Cares?</h3>
+                <p>Regulators are concerned about $TechStock's financials, but the market just keeps going up.</p>
+            </div>
+            <div class="news-item">
+                <h3>Jim Cramer Calls $TechStock a ‘Scam’ – Price Immediately Doubles</h3>
+                <p>Every time Cramer speaks, $TechStock goes up. This is now a scientific fact.</p>
+            </div>
+        </div>
+    </div>
 
-    <section>
-        <h2>📢 Spread the Word - Tell Everyone!</h2>
-        <p>Owning $TechStock isn’t just an investment; it’s a <b>lifestyle</b>. The more you tell people about it, the more valuable it becomes. If that sounds like a pyramid scheme, it’s only because **you don’t understand the blockchain**.</p>
-        <img src="/mnt/data/ponzi champ.jpg" alt="Ponzi Champ">
-    </section>
-
-    <footer>
-        <p>&copy; 2025 $TechStock | No financial advice. Just vibes.</p>
-    </footer>
+    <div class="footer">
+        &copy; 2025 $TechStock News | No financial advice. Just vibes.
+    </div>
 </body>
 </html>
