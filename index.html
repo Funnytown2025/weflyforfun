@@ -12,8 +12,7 @@
             color: white;
             font-size: 18px;
             padding: 10px 0;
-            position: absolute;
-            top: 60px;
+            position: relative;
             width: 100%;
             overflow: hidden;
             white-space: nowrap;
@@ -21,12 +20,14 @@
         .ticker span {
             display: inline-block;
             padding-left: 100%;
-            animation: ticker-scroll 15s linear infinite;
+            animation: ticker-scroll 25s linear infinite;
         }
         @keyframes ticker-scroll {
             from { transform: translateX(100%); }
             to { transform: translateX(-100%); }
         }
+        .ticker .down { color: red; }
+        .ticker .up { color: green; font-weight: bold; }
         section { margin: 60px auto; padding: 30px; background-color: #f4f4f4; border-radius: 10px; max-width: 800px; box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.2); }
         .highlight { font-size: 26px; color: #0073e6; font-weight: bold; }
         .btn { padding: 15px 30px; background-color: #0073e6; color: white; font-size: 20px; text-decoration: none; border-radius: 5px; display: inline-block; margin-top: 20px; transition: 0.3s; }
@@ -41,7 +42,15 @@
         <h1>$TechStock 🚀</h1>
         <p>The hottest tech stock that’s not a stock!</p>
         <div class="ticker">
-            <span>WCOM: 0.00 ▼100% | ETOYS: 0.00 ▼100% | ENRON: 0.00 ▼100% | THERANOS: 0.00 ▼100% | WEWORK: 0.00 ▼100% | PETS.COM: 0.00 ▼100% | $TECHSTOCK: 0.50 ▲1000% 🚀</span>
+            <span>
+                <span class="down">WCOM: 0.00 ▼100%</span> | 
+                <span class="down">ETOYS: 0.00 ▼100%</span> | 
+                <span class="down">ENRON: 0.00 ▼100%</span> | 
+                <span class="down">THERANOS: 0.00 ▼100%</span> | 
+                <span class="down">WEWORK: 0.00 ▼100%</span> | 
+                <span class="down">PETS.COM: 0.00 ▼100%</span> | 
+                <span class="up">$TECHSTOCK: 0.50 ▲1000% 🚀</span>
+            </span>
         </div>
     </header>
 
